@@ -1,0 +1,45 @@
+@use 'colors';
+
+.product-listing-cabecario{
+    display: flex;
+    width: 78%;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+
+    .texto-cabecario{
+        font-size: 16px;
+        display: flex;
+
+    }
+
+    .texto-cabecario-resultados{
+        font-weight: 700;
+    
+    }
+}
+
+.product-listing-page {
+    display: flex;
+    justify-content: space-between;
+    max-width: 89%;
+    margin: auto;
+    
+    .div-product-filter {
+        width: 25%;
+        height: 300px;
+     
+       
+    }
+
+    .div-product-listing {
+        width: 80%;
+       
+      
+    }
+
+}
+
+.posicao{
+    margin-left: 100px;
+}

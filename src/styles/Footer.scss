@@ -1,0 +1,91 @@
+@use 'colors';
+
+@mixin tabela{
+    list-style: none;
+    font-size: 16px;
+
+    li{
+        padding-top: 10px;
+        
+    }
+}
+
+.footer {
+    background-color: colors.$dark-gray;
+    color: colors.$white; 
+    padding-top: 3rem;
+   
+    .footer-top {
+        
+        display: flex;
+        justify-content: space-between;
+        margin: auto 9rem;
+        
+
+        .coluna1 {
+           margin-right: 50px;    
+            
+           #textoFooter{
+            margin: 30px auto;
+            font-size: 16px;
+           }
+
+           .icones{
+            display: flex;
+            max-width: 40%;
+            justify-content: space-between; 
+            cursor: pointer
+        }
+        }
+
+        .coluna2 {
+            
+        }
+
+        .coluna3 {
+           
+        }
+
+        .coluna4 {
+
+        }
+
+
+        .lista1, .lista2, .lista3, .lista4{
+            @include tabela();
+
+            .titulo{
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+
+        .clicavel{
+            cursor: pointer;
+        }
+    }
+
+    .footer-bot {
+        width: 100%;
+        justify-content: center;
+        height: 90px;
+
+        .barraFooter{
+            opacity: 1;
+            border: 1px solid ;
+            width: 83%;
+            margin: 2rem auto;
+            display: flex;
+            justify-self: center;
+            color: colors.$dark-gray-2;
+            
+        }
+
+        .digitalCollegeFooter{
+            display: flex;
+            justify-self: center;
+            font-size: 13px;
+        }
+    }
+
+}

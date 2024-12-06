@@ -1,0 +1,121 @@
+@use 'colors';
+
+#texto {
+    display: flex;
+    max-width: 79%;
+    justify-content: start;
+    margin: 50px auto;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-style: bold;
+}
+
+.colecao1-cards{
+
+    .colecao {
+        display: flex;
+        max-width: 80%;
+        margin: auto;
+        justify-content: space-between;
+        
+    
+        .imgcolecao {
+            margin: auto 0px;
+            max-width: 480px;
+            height: 298px;
+            
+            border-radius: 11px;
+    
+        }
+    
+    
+        .infos1, .infos2, .infos3 {
+           margin-top: -380px;
+           
+            .porcentagem {
+                position: relative;
+                margin: 98px 0px;
+                flex: 1;
+                background-color: #E7FF86;
+                border-radius: 19px;
+                font-weight: bold;
+                padding: 7px 10px;
+                max-width: 100px;
+                font-size: 17px;
+                justify-content: start;
+    
+            }
+    
+            .botao1, .botao2, .botao3 {
+                padding: 15px;
+                border: none;
+                background-color: colors.$light-gray-3;
+                color: colors.$primary;
+                width: 45%;
+                font-weight: bold;
+                border-radius: 10px;
+    
+            }
+        }
+    
+        .infos1{
+            margin-left: 30px;
+        }
+    
+        .infos2{
+            margin-left: 42px;
+        }
+    
+        .infos3{
+            margin-left: 20px;
+        }
+    
+    
+    }
+}
+
+.colecao2-botoes{
+   
+    margin:10rem 0 ;
+    
+    #texto2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .colecao2{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        .colecao2-img1{
+            height: 11rem;
+            margin-right: -15px;
+        }
+
+        .colecao2-img2, .colecao2-img3, .colecao2-img4, .colecao2-img5{
+            
+            height: 7rem;
+            object-fit: cover;
+        }
+
+    }
+    .colecao2-textos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+        font-size: 15px;
+        color: colors.$dark-gray-2;
+        font-weight: bold;
+        
+
+        #colecao2-texto2{
+            margin-left: 25px;
+        }
+        #colecao2-texto3{
+            margin-left: 20px;
+        }
+    }
+}
